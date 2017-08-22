@@ -84,8 +84,16 @@ public class SwipeButton extends RelativeLayout {
         return active;
     }
 
+    public void setTextColor(int color) {
+        centerText.setTextColor(color);
+    }
+
     public void setText(String text) {
         centerText.setText(text);
+    }
+
+    public String getText() {
+        return centerText.getText().toString();
     }
 
     public void setBackground(Drawable drawable) {
